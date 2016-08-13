@@ -20,4 +20,4 @@ sites:
       to: "/home/vagrant/wp-starter/public"
 
 databases:
-    - wp-starter
+    - wp_starter
