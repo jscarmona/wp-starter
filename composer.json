@@ -1,0 +1,32 @@
+{
+    "name": "jscarmona/wp-starter",
+    "description": "A WordPress starter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier Carmona",
+            "email": "javierscarmona@gmail.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "extra":{
+        "installer-paths":{
+            "public/content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "public/content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "public/wordpress"
+    },
+    "require": {
+        "johnpbloch/wordpress": "^4.5",
+        "oscarotero/env": "^1.0",
+        "vlucas/phpdotenv": "^2.3"
+    },
+    "require-dev": {
+        "laravel/homestead": "^3.0"
+    }
+}

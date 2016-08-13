@@ -1,0 +1,9 @@
+/.idea
+/.vagrant
+/public/wordpress
+/public/content/uploads/*
+!/public/content/uploads/.gitkeep
+/vendor/*
+!/vendor/.gitkeep
+Homestead.yaml
+.env

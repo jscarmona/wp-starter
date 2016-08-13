@@ -1,0 +1,23 @@
+---
+ip: "192.168.10.20"
+memory: 2048
+cpus: 1
+hostname: wp-starter
+name: wp-starter
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: "/path/to/project/wp-starter"
+      to: "/home/vagrant/wp-starter"
+
+sites:
+    - map: wp-starter.app
+      to: "/home/vagrant/wp-starter/public"
+
+databases:
+    - wp-starter
